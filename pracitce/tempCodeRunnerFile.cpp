@@ -1,0 +1,1 @@
+dynamicObj(int n,int lines):option(n
