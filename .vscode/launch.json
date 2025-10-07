@@ -1,0 +1,47 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Run Active File",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",  // Path to the generated executable
+//             "args": [],
+//             "stopAtEntry": false,
+//             "cwd": "${fileDirname}",
+//             "environment": [],
+//             "externalConsole": false,  // Use integrated terminal
+//             "preLaunchTask": "",  // Runs the build task first
+//             "MIMode": "",  // Remove GDB settings to avoid debugger
+//             "miDebuggerPath": "",  // Remove GDB path
+//             "setupCommands": []  // Remove GDB-specific setup commands
+//         }
+//     ]
+// }
+
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++.exe build active file"
+        }
+    ]
+}

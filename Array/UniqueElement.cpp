@@ -9,7 +9,7 @@ int uniqueElement(int arr[],int n){
     return ans;
 }
 int main(){
-    int arr[] = {10,20,30,40,30,10,20};
+    int arr[] = {10,20,30,30,10,20,40};
     int n = 7;
     cout<<uniqueElement(arr,n);
   

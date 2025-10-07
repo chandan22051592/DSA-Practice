@@ -1,8 +1,11 @@
 {
-    "files.associations": {
-        "iostream": "cpp"
-    },
     "files.exclude": {
-        "**/*.exe": true
+      "**/*.exe": true
+    },
+    "files.associations": {
+      "iostream": "cpp",
+      "ostream": "cpp",
+      "vector": "cpp"
     }
-}
+  }
+  
